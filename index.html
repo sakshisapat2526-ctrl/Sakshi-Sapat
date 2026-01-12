@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Single Person Details</title>
+   <title>Login Form</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <table border="1" cellpadding="8" cellspacing="0">
-        <tr>
-            <th>Serial No</th>
-            <th>Name</th>
-            <th>Roll No</th>
-            <th>Mobile No</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>sakshii sapat</td>
-            <td>B65</td>
-            <td>9876543210</td>
-        </tr>
-    </table>
-
+   <h2>Login Form</h2>
+   <form action="action_page.php" method="post">
+       <div class="imgcontainer">
+           <img src="img_avatar2.png" alt="Avatar" class="avatar">
+       </div>
+       <div class="container">
+           <label for="uname"><b>Username</b></label>
+           <input type="text" placeholder="Enter Username" name="uname" required>
+           <label for="psw"><b>Password</b></label>
+           <input type="password" placeholder="Enter Password" name="psw" required>
+           <button type="submit">Login</button>
+           <label>
+               <input type="checkbox" checked="checked" name="remember"> Remember me
+           </label>
+       </div>
+       <div class="container" style="background-color:#f1f1f1">
+           <button type="button" class="cancelbtn">Cancel</button>
+           <span class="psw">Forgot <a href="#">password?</a></span>
+       </div>
+   </form>
 </body>
 </html>
