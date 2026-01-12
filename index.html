@@ -1,29 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <title>Login Form</title>
-   <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-   <h2>Login Form</h2>
-   <form action="action_page.php" method="post">
-       <div class="imgcontainer">
-           <img src="img_avatar2.png" alt="Avatar" class="avatar">
-       </div>
-       <div class="container">
-           <label for="uname"><b>Username</b></label>
-           <input type="text" placeholder="Enter Username" name="uname" required>
-           <label for="psw"><b>Password</b></label>
-           <input type="password" placeholder="Enter Password" name="psw" required>
-           <button type="submit">Login</button>
-           <label>
-               <input type="checkbox" checked="checked" name="remember"> Remember me
-           </label>
-       </div>
-       <div class="container" style="background-color:#f1f1f1">
-           <button type="button" class="cancelbtn">Cancel</button>
-           <span class="psw">Forgot <a href="#">password?</a></span>
-       </div>
-   </form>
+
+    <table>
+        <caption>Student Data</caption>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Aarav Sharma</td><td>15</td><td>A</td></tr>
+            <tr><td>2</td><td>Priya Verma</td><td>14</td><td>B+</td></tr>
+            <tr><td>3</td><td>Rohan Mehta</td><td>15</td><td>A-</td></tr>
+            <tr><td>4</td><td>Simran Kaur</td><td>14</td><td>A</td></tr>
+            <tr><td>5</td><td>Aditya Singh</td><td>16</td><td>B</td></tr>
+            <tr><td>6</td><td>Neha Gupta</td><td>15</td><td>A+</td></tr>
+            <tr><td>7</td><td>Vikram Joshi</td><td>14</td><td>B</td></tr>
+            <tr><td>8</td><td>Ananya Rao</td><td>15</td><td>A</td></tr>
+            <tr><td>9</td><td>Karan Patel</td><td>16</td><td>B+</td></tr>
+            <tr><td>10</td><td>Sanya Kapoor</td><td>14</td><td>A-</td></tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
